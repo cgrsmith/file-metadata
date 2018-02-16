@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <title>File Metadata Microservice</title>
+</head>
+
+<body>
+    <h1>File Metadata Microservice</h1>
+    <p>Upload a file to get its size in bytes returned as JSON: </p>
+    <p><code>{ "fileName" : <em>file-name</em>, "size" : <em>file-size</em> }</code></p>
+    <form action="/file-data", enctype="multipart/form-data" method="POST">
+        <input type="file" name="file" required>
+        <input type="submit" value="Submit File">
+    </form>
+</body>
+</html>
